@@ -1,0 +1,15 @@
+{
+  "id": "9ec01ada-73fe-6151-0e4e-edfc0e93fb78",
+  "name": "Postman Globals",
+  "values": [
+    {
+      "enabled": true,
+      "key": "uid",
+      "value": "Tony",
+      "type": "text"
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2017-07-25T01:34:59.951Z",
+  "_postman_exported_using": "Postman/5.1.2"
+}
