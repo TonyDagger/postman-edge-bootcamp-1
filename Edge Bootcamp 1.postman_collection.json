@@ -1,0 +1,119 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Edge Bootcamp 1",
+		"_postman_id": "7b066087-5c9b-b3a4-ab78-09f496c3ee8d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET bootcamp comments/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Body should contain latin text: laudantium etc.\"] = responseBody.has(\"laudantium enim quasi\");",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://{{org}}-{{env}}.apigee.net/v1/{{initials}}_bootcamp/comments/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET bootcamp posts/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Body should contain latin text: quia et suscipit etc.\"] = responseBody.has(\"quia et suscipit\");",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://{{org}}-{{env}}.apigee.net/v1/{{initials}}_bootcamp/posts/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /comments/1 copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Body should contain latin text: laudantium etc.\"] = responseBody.has(\"laudantium enim quasi\");",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://jsonplaceholder.typicode.com/comments/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /posts/1 copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Body should contain latin text: quia et suscipit etc.\"] = responseBody.has(\"quia et suscipit\");",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://jsonplaceholder.typicode.com/posts/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
